@@ -110,10 +110,10 @@ jobs:
           echo "        }" >> continuous_visit_puppeteer.js
           echo "      }, 20000);  // Every 20 seconds" >> continuous_visit_puppeteer.js
           echo "" >> continuous_visit_puppeteer.js
-          echo "      // Wait for random time between 15 to 30 minutes on the website" >> continuous_visit_puppeteer.js
-          echo "      const stayTime = Math.floor(Math.random() * (30 - 15 + 1) + 15) * 60 * 1000;" >> continuous_visit_puppeteer.js
+          echo "      // Wait for random time between 30 to 45 minutes on the website" >> continuous_visit_puppeteer.js
+          echo "      const stayTime = Math.floor(Math.random() * (45 - 30 + 1) + 30) * 60 * 1000;" >> continuous_visit_puppeteer.js
           echo "      console.log('Staying on the website for', stayTime / 60000, 'minutes...');" >> continuous_visit_puppeteer.js
-          echo "      await new Promise(resolve => setTimeout(resolve, stayTime));  // Random wait between 15 to 30 minutes" >> continuous_visit_puppeteer.js
+          echo "      await new Promise(resolve => setTimeout(resolve, stayTime));  // Random wait between 30 to 45 minutes" >> continuous_visit_puppeteer.js
           echo "" >> continuous_visit_puppeteer.js
           echo "      // Stop checking the hashes per second" >> continuous_visit_puppeteer.js
           echo "      clearInterval(checkHashesPerSecond);" >> continuous_visit_puppeteer.js
